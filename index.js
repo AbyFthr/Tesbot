@@ -685,11 +685,11 @@ case 'thailand':
 case 'indonesia':
 case 'korea':
 case 'japan':
-ccn = await getBuffer(`https://lexxy-api.herokuapp.com/docs/cecan/${command}?apikey=Alphabot`)
+ccn = await getBuffer(`https://lexxy-api.herokuapp.com/docs/cecan/${command}?apikey=LNbBHRiN`)
 Lexxy.sendMessage(from, gfx, image, { quoted: mek, caption: `Random Cecan ${command}`})
 break
 case 'malaysia':
-yh = await fetchJson(`https://lexxy-api.herokuapp.com/docs/cecan/malaysia?apikey=Alphabot`)
+yh = await fetchJson(`https://lexxy-api.herokuapp.com/docs/cecan/malaysia?apikey=LNbBHRiN`)
 ccn = await getBuffer(yh.buff)
 Lexxy.sendMessage(from, ccn, image, { quoted: mek, caption: `Random Cecan ${command}`})
 break
@@ -700,7 +700,7 @@ if (args.length ==0) return reply(`Text Nya Mana? Contohnya\n${prefix+command} K
 sticWait(from)
 ini_txt = args.join(" ")
 gfx = await getBuffer(`https://hardianto.xyz/api/bot/${command}?apikey=hardianto&nama=${ini_txt}`)
-Lexxy.sendMessage(from, gfx, image, { quoted: mek, caption: '*Logo By KRIS GAMING OFC*'})
+Lexxy.sendMessage(from, gfx, image, { quoted: mek, caption: '*Logo By AbyBotz*'})
 break
 case 'gfx3':
 case 'gfx4':
@@ -709,14 +709,14 @@ sticWait(from)
 ini_txt1 = args[0]
 ini_txt1 = args[1]
 gfx = await getBuffer(`https://hardianto.xyz/api/bot/${command}?apikey=hardianto&text1=${ini_txt1}&text2=${ini_txt2}`)
-Lexxy.sendMessage(from, gfx, image, { quoted: mek, caption: '*Logo By KRIS GAMING OFC*'})
+Lexxy.sendMessage(from, gfx, image, { quoted: mek, caption: '*Logo By AbyBotz*'})
 break
 case 'gfx6':
 if (args.length ==0) return reply(`Text Nya Mana? Contohnya\n${prefix+command} KRIS GAMING`)
 sticWait(from)
 ini_txt = args.join(" ")
 gfx = await getBuffer(`https://hardianto.xyz/api/bot/gura?apikey=hardianto&nama=${ini_txt}`)
-Lexxy.sendMessage(from, gfx, image, { quoted: mek, caption: '*Logo By KRIS GAMING OFC*'})
+Lexxy.sendMessage(from, gfx, image, { quoted: mek, caption: '*Logo By AbyBotz*'})
 break
 case 'menu':
 const { wa_version, mcc, mnc, os_version, device_manufacturer, device_model } = Lexxy.user.phone
@@ -1013,7 +1013,7 @@ case 'panties':
 case 'thighs':
 case 'yuri':
 case 'neko':
-get = await fetchJson(`https://lexxy-api.herokuapp.com/docs/nsfw/${command}?apikey=Alphabot`)
+get = await fetchJson(`https://lexxy-api.herokuapp.com/docs/nsfw/${command}?apikey=LNbBHRiN`)
 ini = await getBuffer(get.result)
 Lexxy.sendMessage(from, ini, image, { quoted: ftex, caption: `${command}` })
 break
@@ -1022,7 +1022,7 @@ case 'ukhty':
 case 'gheayubi':
 case 'rikagusriani':
 case 'bocil':
-bcl = await fetchJson(`https://lexxy-api.herokuapp.com/docs/asupan/${command}?apikey=Alphabot`)
+bcl = await fetchJson(`https://lexxy-api.herokuapp.com/docs/asupan/${command}?apikey=LNbBHRiN`)
 Lexxy.sendMessage(from, bcl, video)
 break
 case 'serti1':
@@ -1042,7 +1042,7 @@ if (!isPremier)return reply(mess.premier)
 if (isBanned)return sticBanned(from)
 if (args.length ==0) return reply(`Link Nya Mana kak?`)
 tk = args.join(" ")
-ini = await fetchJson(`https://lexxy-api.herokuapp.com/docs/download/tiktok?url=${tk}&apikey=Alphabot`)
+ini = await fetchJson(`https://lexxy-api.herokuapp.com/docs/download/tiktok?url=${tk}&apikey=LNbBHRiN`)
 sticLoad(from)
 ttv = await getBuffer(ini.result.nowm)
 Lexxy.sendMessage(from, ttv, video)
